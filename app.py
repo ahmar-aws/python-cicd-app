@@ -101,7 +101,7 @@ HTML_TEMPLATE = '''
 </head>
 <body>
     <div class="container">
-        <h1>🚀 Python CI/CD Pipeline</h1>
+        <h1>🚀 Python CI/CD Pipeline hahahahahh</h1>
         <p class="subtitle">Deployed via AWS CodePipeline & CodeDeploy</p>
         
         <div class="status">
