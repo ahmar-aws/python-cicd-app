@@ -1,17 +1,11 @@
 #!/bin/bash
-
 cd /home/ubuntu/python-app
 
-# Activate virtual environment
+# Activate virtual environment and start app
 source venv/bin/activate
 
-# Kill any existing gunicorn processes
-pkill -f gunicorn || true
+# Start your Python application (choose based on your framework)
+nohup python3 app.py > app.log 2>&1 &
 
-# Start the application with gunicorn in background
-nohup gunicorn --bind 0.0.0.0:5000 app:app > /home/ubuntu/python-app/app.log 2>&1 &
-
-# Wait a moment for the app to start
-sleep 3
-
-echo "Application started successfully"
+# Save the process ID
+echo $! > app.pid
