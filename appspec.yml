@@ -4,15 +4,15 @@ files:
   - source: /
     destination: /home/ubuntu/python-app
 hooks:
-  BeforeInstall:
-    - location: scripts/install_dependencies.sh
-      timeout: 300
-      runas: root
-  ApplicationStart:
-    - location: scripts/start_application.sh
-      timeout: 300
-      runas: root
   ApplicationStop:
     - location: scripts/stop_application.sh
       timeout: 300
-      runas: root
+      runas: ubuntu
+  BeforeInstall:
+    - location: scripts/install_dependencies.sh
+      timeout: 300
+      runas: ubuntu
+  ApplicationStart:
+    - location: scripts/start_application.sh
+      timeout: 300
+      runas: ubuntu
