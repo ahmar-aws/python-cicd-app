@@ -105,7 +105,7 @@ HTML_TEMPLATE = '''
         <p class="subtitle">Deployed via AWS CodePipeline & CodeDeploy</p>
         
         <div class="status">
-            ✅ Application Successfully Deployed!
+            ✅ Application Successfully Deployed!by ahmar aki khan
         </div>
         
         <div class="info-grid">
