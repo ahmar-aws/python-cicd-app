@@ -8,7 +8,7 @@ HTML_TEMPLATE = '''
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Python CI/CD Pipeline Demo</title>
+    <title>Python CI/CD Pipeline Demo by ahmar ali khan</title>
     <style>
         * {
             margin: 0;
